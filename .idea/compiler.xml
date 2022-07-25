@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="loveblood-common" />
+        <module name="loveblood-poster" />
+        <module name="loveblood-gateway" />
+        <module name="loveblood-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="loveblood-common" options="-parameters" />
+      <module name="loveblood-gateway" options="-parameters" />
+      <module name="loveblood-poster" options="-parameters" />
+      <module name="loveblood-service" options="-parameters" />
+    </option>
+  </component>
+</project>
