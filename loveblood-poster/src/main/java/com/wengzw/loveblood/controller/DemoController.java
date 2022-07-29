@@ -1,5 +1,7 @@
 package com.wengzw.loveblood.controller;
 
+import com.wengzw.entity.ResponseResult;
+import com.wengzw.enums.RespStatusEnum;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @GetMapping("/demo")
-    public String demo() {
-        return "hello world";
+    public ResponseResult demo() {
+        return new ResponseResult(RespStatusEnum.SUCCESS,"hello world");
     }
 
 }

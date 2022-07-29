@@ -17,6 +17,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+    <!--    引入common的har包才能使用里面的类      -->
+        <dependency>
+            <groupId>com.wengzw.loveblood</groupId>
+            <artifactId>loveblood-common</artifactId>
+        </dependency>
+
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba.cloud</groupId>-->
 <!--            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
