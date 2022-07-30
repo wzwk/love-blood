@@ -7,6 +7,7 @@ import com.wengzw.blood.gateway.security.handler.AuthenticationSuccessHandler;
 import com.wengzw.blood.gateway.security.handler.CustomHttpBasicServerAuthenticationEntryPoint;
 import com.wengzw.blood.gateway.security.handler.TimingLogoutSuccessHandler;
 import com.wengzw.blood.gateway.security.service.SecurityUserDetailService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.buffer.DefaultDataBufferFactory;
 import org.springframework.http.HttpMethod;
@@ -50,10 +51,13 @@ public class SecurityWebfluxConfig {
      * 白名单路径
      */
 //    @Value("${authPath.excludeAuth}")
-    private static final String[] excludeAuthPages = {
-            "/auth/**",
-            "/user/register"
-    };
+//    private static final String[] excludeAuthPages = {
+//            "/auth/**",
+//            "/user/register"
+//    };
+
+    @Value("#{'${excludeAuthPages}'}")
+    private String[] excludeAuthPages;
 
     /**
      * 验证账号密码

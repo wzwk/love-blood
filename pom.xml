@@ -12,7 +12,7 @@
         <module>loveblood-service</module>
     </modules>
 
-    <!--    引入此父依赖后，点击进去后可看到已经帮我们加载了很多依赖   -->
+    <!--    引入此父依赖后，点击进去后可看到已经帮我们加载了很多依赖 springboot版本  -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

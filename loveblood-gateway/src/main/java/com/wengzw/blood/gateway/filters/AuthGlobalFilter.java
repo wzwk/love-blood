@@ -9,6 +9,7 @@ import cn.hutool.core.util.StrUtil;
 import com.wengzw.blood.common.utils.JwtUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -37,10 +38,13 @@ import java.net.URI;
 @RequiredArgsConstructor
 public class AuthGlobalFilter implements GlobalFilter, Ordered {
 
-    private static final String[] excludeAuthPages = {
-            "/auth/**",
-            "/user/register"
-    };
+//    private static final String[] excludeAuthPages = {
+//            "/auth/**",
+//            "/user/register"
+//    };
+
+    @Value("#{'${excludeAuthPages}'}")
+    private String[] excludeAuthPages;
 
     private String[] sqlPatternList = {"%'", "select ", "insert ", "delete ", " from",
             "count\\(", "drop table", "update ", "truncate ", "asc\\(",
