@@ -1,7 +1,7 @@
 package com.wengzw.loveblood.controller;
 
-import com.wengzw.entity.ResponseResult;
-import com.wengzw.enums.RespStatusEnum;
+import com.wengzw.blood.common.entity.ResponseResult;
+import com.wengzw.blood.common.enums.RespStatusEnum;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

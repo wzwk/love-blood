@@ -40,12 +40,24 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+        <!--mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 
         <!--nacos客户端 不用导入，父模块已经做了全局处理-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
+        <!--客户端负载均衡loadbalancer-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+
 
     </dependencies>
 

@@ -23,20 +23,27 @@
             <artifactId>loveblood-common</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
-<!--        </dependency>-->
-        <!--服务注册-->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!--nacos客户端 不用导入，父模块已经做了全局处理-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
         <!--服务调用-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <!--SpringCloud ailibaba sentinel-datasource-nacos 后续做持久化用到-->
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba.csp</groupId>-->

@@ -1,5 +1,50 @@
 server:
-  port: 8087
-#spring:
-#  application:
-#    name: loveblood-poster
+  port: 8089
+spring:
+  application:
+    name: loveblood-poster
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/love_blood?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: xiaowei233
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    timeout: 180000
+  #    lettuce:
+  #      pool:
+  #        max-active: 8
+  #        max-idle: 8
+  #        min-idle: 0
+#    sentinel:
+#      transport:
+#        dashboard: 127.0.0.1:8080
+#        port: 8719
+#      datasource:
+#        ds:
+#          nacos:
+#            server-addr: 127.0.0.1:8848
+#            dataId: message-core
+#            groupId: DEFAULT_GROUP
+#            data-type: json
+#            rule-type: flow
+#
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#feign:
+#  sentinel:
+#    enabled: true # 激活Sentinel对Feign的支持
