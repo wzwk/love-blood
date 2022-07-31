@@ -17,7 +17,8 @@ public enum AccountError implements ErrorInfo{
     REG_CODE_ERROR(10004, 400, "邀请注册码错误"),
     EMAIL_CODE_ERROR(10005, 400, "邮箱验证码错误"),
     USER_NOT_EXIST(10006, 404, "用户不存在"),
-    EMAIL_NOT_SET(10007, 404, "用户未设置邮箱");
+    EMAIL_NOT_SET(10007, 404, "用户未设置邮箱"),
+    USER_INFORMATION_INCOMPLETE(10008,400,"用户信息不完善");
 
     int code;
     int status;

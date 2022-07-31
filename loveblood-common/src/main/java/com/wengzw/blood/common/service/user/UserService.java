@@ -1,6 +1,7 @@
 package com.wengzw.blood.common.service.user;
 
 import com.wengzw.blood.common.entity.AuthUser;
+import com.wengzw.blood.common.entity.ResponseResult;
 import org.springframework.validation.annotation.Validated;
 
 /**
@@ -10,5 +11,5 @@ import org.springframework.validation.annotation.Validated;
 @Validated
 public interface UserService {
 
-    int register(AuthUser authUser);
+    ResponseResult register(String email, String mobile, String password, String userName, String code);
 }

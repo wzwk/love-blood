@@ -28,6 +28,12 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+        <!--  redis      -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!--nacos客户端 不用导入，父模块已经做了全局处理-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -44,6 +50,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+
         <!--SpringCloud ailibaba sentinel-datasource-nacos 后续做持久化用到-->
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba.csp</groupId>-->
