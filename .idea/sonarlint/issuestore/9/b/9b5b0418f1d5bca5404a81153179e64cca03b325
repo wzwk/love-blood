@@ -1,0 +1,14 @@
+
+M
+java:S1135"2Complete the task associated to this TODO comment.(ûä®Íûÿÿÿÿ
+]	java:S125)"<This block of commented-out lines of code should be removed.(ÀŸÈàÿÿÿÿÿ8Äî•ı¤0
+m
+java:S3776E"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(‹ËÃóÿÿÿÿÿ
+q
+java:S3252l"OUse static access with "cn.hutool.core.text.CharSequenceUtil" for "isNotBlank".(õ‹ùûÿÿÿÿ8œİÛó¤0
+i
+java:S3252q"LUse static access with "cn.hutool.core.text.CharSequenceUtil" for "isBlank".(Üâö…8Œ Èó¤0
+D
+java:S1066c"/Merge this if statement with the enclosing one.(ØÈ¶8
+E
+java:S5411R"*Use the primitive boolean expression here.(³Ú­Ÿøÿÿÿÿ

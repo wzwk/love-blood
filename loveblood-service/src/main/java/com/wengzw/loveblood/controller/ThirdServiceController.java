@@ -1,6 +1,7 @@
 package com.wengzw.loveblood.controller;
 
 import com.wengzw.blood.common.entity.ResponseResult;
+import com.wengzw.blood.common.validator.annotations.OperationLog;
 import com.wengzw.loveblood.service.ThirdService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -38,6 +39,7 @@ public class ThirdServiceController {
      * @return
      */
     @GetMapping("emailSend/{email}")
+    @OperationLog(operationType = "发送验证码", operationDescription = "调用邮箱接口发送验证码")
     public ResponseResult emailSend(@PathVariable @Email String email) {
         if (thirdService.emailSend(email)) {
             return ResponseResult.success("邮件发送成功");
