@@ -12,7 +12,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/love_blood?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/love_blood?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2b8
     username: root
     password: xiaowei233
 
