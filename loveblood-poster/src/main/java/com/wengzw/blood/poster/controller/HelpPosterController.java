@@ -29,8 +29,8 @@ public class HelpPosterController {
     @PostMapping("/insertHelpPoster")
     @ResponseBody
     public ResponseResult insertHelpPoster(@RequestHeader("token") String token, @RequestBody HelpPoster helpPoster) {
-//        String id = JwtUtils.parse(token).get("id");
-        helpPoster.setUserId(1);
+        String id = JwtUtils.parse(token).get("id");
+        helpPoster.setUserId(Integer.valueOf(id));
         helpPoster.setGmtCreate(new Date());
         return helpPosterService.insertHelpPoster(helpPoster);
     }

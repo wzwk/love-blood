@@ -14,7 +14,13 @@ spring:
           uri: lb://loveblood-poster
           order: 1
           predicates:
-            - Path=/user/**
+            - Path=/user/**,/blood/**
+
+        - id: loveblood-gateway
+          uri: lb://loveblood-service
+          order: 1
+          predicates:
+            - Path=/service/**
       discovery:
         locator:
           enabled: true
@@ -33,4 +39,4 @@ spring:
     timeout: 180000
 
 # 白名单路径
-excludeAuthPages: /auth/**,/user/register
+excludeAuthPages: /auth/**,/user/register,/blood/knowledge/**,/service/**
