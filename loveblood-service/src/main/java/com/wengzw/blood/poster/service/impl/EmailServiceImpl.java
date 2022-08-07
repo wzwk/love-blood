@@ -1,7 +1,7 @@
 package com.wengzw.blood.poster.service.impl;
 
 import com.wengzw.blood.common.utils.RandomUtil;
-import com.wengzw.blood.poster.service.ThirdService;
+import com.wengzw.blood.poster.service.EmailService;
 import org.apache.commons.mail.HtmlEmail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2022/7/31 14:06
  */
 @Service
-public class ThirdServiceImpl implements ThirdService {
+public class EmailServiceImpl implements EmailService {
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;

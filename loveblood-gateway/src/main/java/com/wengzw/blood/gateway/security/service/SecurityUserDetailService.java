@@ -29,7 +29,8 @@ public class SecurityUserDetailService implements ReactiveUserDetailsService {
                         .roles("admin", "super").authorities("admin").build();
                 return Mono.just(user);
             } else {
-                return null;
+                // 不要直接返回null 会报空指针异常
+                return Mono.empty();
             }
         } catch (Exception e) {
             e.printStackTrace();

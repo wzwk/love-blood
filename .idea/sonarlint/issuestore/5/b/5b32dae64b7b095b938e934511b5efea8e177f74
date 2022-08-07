@@ -1,0 +1,33 @@
+
+v
+java:S3008"TRename this field "END_POIND" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µì¿éûÿÿÿÿ8ã°ö§0
+t
+java:S3008"XRename this field "ACCESS_KEY_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§³·d8ã°ö§0
+~
+java:S3008"\Rename this field "ACCESS_KEY_SECRET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶‚Ğßıÿÿÿÿ8ã°ö§0
+x
+java:S3008"VRename this field "BUCKET_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸£Â£ıÿÿÿÿ8ä°ö§0
+X
+java:S2696#"6Make the enclosing method "static" or remove this set.(–áÍäıÿÿÿÿ8ê°ö§0
+X
+java:S2696$"6Make the enclosing method "static" or remove this set.(¿òÇÄùÿÿÿÿ8ê°ö§0
+X
+java:S2696%"6Make the enclosing method "static" or remove this set.(ÎÂÇúùÿÿÿÿ8ë°ö§0
+R
+java:S2696&"6Make the enclosing method "static" or remove this set.(äÚv8ë°ö§0
+w
+java:S1104"UMake END_POIND a static final constant or non-public and provide accessors if needed.(µì¿éûÿÿÿÿ8ì°ö§0
+u
+java:S1104"YMake ACCESS_KEY_ID a static final constant or non-public and provide accessors if needed.(§³·d8ì°ö§0
+
+java:S1104"]Make ACCESS_KEY_SECRET a static final constant or non-public and provide accessors if needed.(¶‚Ğßıÿÿÿÿ8í°ö§0
+y
+java:S1104"WMake BUCKET_NAME a static final constant or non-public and provide accessors if needed.(¸£Â£ıÿÿÿÿ8í°ö§0
+Q
+java:S1444"/Make this "public static END_POIND" field final(µì¿éûÿÿÿÿ8í°ö§0
+O
+java:S1444"3Make this "public static ACCESS_KEY_ID" field final(§³·d8í°ö§0
+Y
+java:S1444"7Make this "public static ACCESS_KEY_SECRET" field final(¶‚Ğßıÿÿÿÿ8í°ö§0
+S
+java:S1444"1Make this "public static BUCKET_NAME" field final(¸£Â£ıÿÿÿÿ8î°ö§0

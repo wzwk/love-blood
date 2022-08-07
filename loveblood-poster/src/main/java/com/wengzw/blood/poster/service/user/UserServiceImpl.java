@@ -8,13 +8,17 @@ import com.wengzw.blood.common.entity.AuthUser;
 import com.wengzw.blood.common.entity.ResponseResult;
 import com.wengzw.blood.common.enums.RespStatusEnum;
 import com.wengzw.blood.common.error.AccountError;
+import com.wengzw.blood.common.error.ErrorInfo;
 import com.wengzw.blood.common.exception.JsonException;
 import com.wengzw.blood.common.service.user.UserService;
+import com.wengzw.blood.common.utils.JwtUtils;
 import com.wengzw.blood.common.utils.SecureUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
 
 /**
  * @author wengzw
@@ -75,4 +79,55 @@ public class UserServiceImpl extends ServiceImpl<UserDao, AuthUser> implements U
         redisTemplate.delete(email);
         return new ResponseResult(RespStatusEnum.SUCCESS,"注册成功");
     }
+
+    /**
+     * 获取用户信息
+     *
+     * @param token
+     * @return
+     */
+    @Override
+    public ResponseResult getUserInfo(String token) {
+        String id = JwtUtils.parse(token).get("id");
+        AuthUser user = userDao.getUserById(Integer.valueOf(id));
+        return new ResponseResult(RespStatusEnum.SUCCESS,user);
+    }
+
+    /**
+     * 用户信息修改
+     *
+     * @param token
+     * @param user
+     * @return
+     */
+    @Override
+    public ResponseResult modifyUserInfo(String token, AuthUser user) {
+        String id = JwtUtils.parse(token).get("id");
+        user.setId(Integer.valueOf(id));
+        QueryWrapper<AuthUser> wrapper = new QueryWrapper<>();
+        wrapper.eq("id",Integer.valueOf(id));
+
+        int update = baseMapper.update(user, wrapper);
+        if (update < 1) {
+            return new ResponseResult(RespStatusEnum.FAIL);
+        }
+        return new ResponseResult(RespStatusEnum.SUCCESS);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

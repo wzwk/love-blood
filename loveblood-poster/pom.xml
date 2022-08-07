@@ -51,6 +51,12 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
+        <!--  分页插件      -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+
         <!--SpringCloud ailibaba sentinel-datasource-nacos 后续做持久化用到-->
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba.csp</groupId>-->

@@ -23,10 +23,10 @@ public interface UserDao extends BaseMapper<AuthUser> {
     /**
      * 通过用户名获取用户信息
      *
-     * @param username 用户名
+     * @param username 用户电话
      * @return 用户信息对象
      */
-    @Select("SELECT * FROM auth_user WHERE userName = #{username}")
+    @Select("SELECT * FROM auth_user WHERE mobile = #{username}")
     AuthUser getUserByUser(String username);
 
     /**

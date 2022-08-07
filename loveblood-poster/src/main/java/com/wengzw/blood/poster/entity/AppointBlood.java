@@ -26,7 +26,7 @@ public class AppointBlood implements Serializable {
     private String place;
     @TableField(fill = FieldFill.INSERT)
     private Date gmtCreate;
-    private String userId;
+    private Integer userId;
     private Integer status;
 
     @TableField(exist = false)

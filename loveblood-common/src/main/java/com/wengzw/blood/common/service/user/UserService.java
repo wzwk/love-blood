@@ -12,4 +12,8 @@ import org.springframework.validation.annotation.Validated;
 public interface UserService {
 
     ResponseResult register(String email, String mobile, String password, String userName, String code);
+
+    ResponseResult getUserInfo(String token);
+
+    ResponseResult modifyUserInfo(String token, AuthUser user);
 }

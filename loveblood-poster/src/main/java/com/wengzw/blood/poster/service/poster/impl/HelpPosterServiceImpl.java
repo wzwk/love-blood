@@ -10,8 +10,11 @@ import com.wengzw.blood.poster.entity.HelpPoster;
 import com.wengzw.blood.poster.service.poster.BloodKnowledgeService;
 import com.wengzw.blood.poster.service.poster.HelpPosterService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @author wengzw
@@ -20,6 +23,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class HelpPosterServiceImpl extends ServiceImpl<HelpPosterDao, HelpPoster> implements HelpPosterService {
 
     private final HelpPosterDao helpPosterDao;
@@ -35,6 +39,27 @@ public class HelpPosterServiceImpl extends ServiceImpl<HelpPosterDao, HelpPoster
         if (insert < 1) {
             return new ResponseResult(RespStatusEnum.FAIL);
         }
-        return new ResponseResult(RespStatusEnum.SUCCESS);
+        Integer posterId = baseMapper.selectByUserId(helpPoster.getUserId());
+        return new ResponseResult(RespStatusEnum.SUCCESS,posterId);
+    }
+
+    /**
+     * 获取寻求帮助文章
+     * @return
+     */
+    @Override
+    public List<HelpPoster> getHelpPoster() {
+        return helpPosterDao.getHelpPoster();
+    }
+
+    /**
+     * 根据文章id 获取信息
+     * @param posterId
+     * @return
+     */
+    @Override
+    public ResponseResult getHelpPosterByPosterId(Integer posterId) {
+        HelpPoster helpPosterByPosterId = baseMapper.getHelpPosterByPosterId(posterId);
+        return new ResponseResult(RespStatusEnum.SUCCESS,helpPosterByPosterId);
     }
 }

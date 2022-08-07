@@ -2,7 +2,7 @@ package com.wengzw.blood.poster.controller;
 
 import com.wengzw.blood.common.entity.ResponseResult;
 import com.wengzw.blood.common.validator.annotations.OperationLog;
-import com.wengzw.blood.poster.service.ThirdService;
+import com.wengzw.blood.poster.service.EmailService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,15 +22,15 @@ import javax.validation.constraints.Email;
  */
 
 @RestController
-@RequestMapping(ThirdServiceController.PREFIX)
+@RequestMapping(EmailController.PREFIX)
 @RequiredArgsConstructor
 @Validated
 @Slf4j
-public class ThirdServiceController {
+public class EmailController {
     public static final String PREFIX = "/service";
 
     @Autowired
-    private ThirdService thirdService;
+    private EmailService emailService;
 
     /**
      * 发送验证码并保存到缓存中
@@ -41,7 +41,7 @@ public class ThirdServiceController {
     @GetMapping("emailSend/{email}")
     @OperationLog(operationType = "发送验证码", operationDescription = "调用邮箱接口发送验证码")
     public ResponseResult emailSend(@PathVariable @Email String email) {
-        if (thirdService.emailSend(email)) {
+        if (emailService.emailSend(email)) {
             return ResponseResult.success("邮件发送成功");
         }
         return ResponseResult.fail("邮件发送失败");

@@ -109,7 +109,7 @@ public class AuthUser implements UserDetails {
         this.integral = integral;
     }
 
-    public Boolean getDisabled() {
+    public Boolean getIsDisabled() {
         return isDisabled;
     }
 
@@ -117,7 +117,7 @@ public class AuthUser implements UserDetails {
         isDisabled = disabled;
     }
 
-    public Boolean getDeleted() {
+    public Boolean getIsDeleted() {
         return isDeleted;
     }
 

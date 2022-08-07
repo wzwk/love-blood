@@ -20,3 +20,13 @@ spring:
     port: 6379
     database: 0
     timeout: 180000
+
+#阿里云 OSS
+#不同的服务器，地址不同
+aliyun:
+  oss:
+    file:
+      endpoint: oss-cn-beijing.aliyuncs.com
+      keyid: LTAI5tEegyZTrage3MvKybMg
+      keysecret: ZzeG6s7dSSmtL8jXBvi4wIYhkUIvTz
+      bucketname: edu-8887

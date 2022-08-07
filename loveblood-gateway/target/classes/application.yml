@@ -39,4 +39,4 @@ spring:
     timeout: 180000
 
 # 白名单路径
-excludeAuthPages: /auth/**,/user/register,/blood/knowledge/**,/service/**
+excludeAuthPages: /auth/**,/user/register,/blood/knowledge/**,service/**,/service/common/uploadOssFile
