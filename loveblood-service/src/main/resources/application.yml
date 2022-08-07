@@ -26,7 +26,7 @@ spring:
 aliyun:
   oss:
     file:
-      endpoint: oss-cn-beijing.aliyuncs.com
-      keyid: LTAI5tEegyZTrage3MvKybMg
-      keysecret: ZzeG6s7dSSmtL8jXBvi4wIYhkUIvTz
-      bucketname: edu-8887
+      endpoint: 111111111
+      keyid: 11111111111
+      keysecret: 11111111111
+      bucketname: 111111111111111
