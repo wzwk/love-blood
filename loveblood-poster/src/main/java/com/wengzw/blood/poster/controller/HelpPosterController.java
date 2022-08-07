@@ -68,4 +68,38 @@ public class HelpPosterController {
         return helpPosterService.getHelpPosterByPosterId(posterId);
     }
 
+    /**
+     * 根据用户id 获取用户自己发出的献血请求
+     * @return
+     */
+    @GetMapping("getHelpPosterByUserId")
+    @ResponseBody
+    public ResponseResult getHelpPosterByUserId(@RequestHeader("token") String token) {
+        return helpPosterService.getHelpPosterByUserId(token);
+    }
+
+    /**
+     * 修改帮助文章信息
+     *
+     * @param helpPoster
+     * @return
+     */
+    @PutMapping("modifyHelpPosterInfo")
+    @ResponseBody
+    public ResponseResult modifyHelpPosterInfo(@RequestBody HelpPoster helpPoster) {
+        return helpPosterService.modifyHelpPosterInfo(helpPoster);
+    }
+
+    /**
+     * 删除我的寻求文章
+     *
+     * @param posterId
+     * @return
+     */
+    @DeleteMapping("deleteHelpPosterInfo/{posterId}")
+    @ResponseBody
+    public ResponseResult deleteHelpPosterInfo(@PathVariable Integer posterId) {
+        return helpPosterService.deleteHelpPosterInfo(posterId);
+    }
+
 }

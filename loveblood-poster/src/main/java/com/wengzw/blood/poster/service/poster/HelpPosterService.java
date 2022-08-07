@@ -15,4 +15,10 @@ public interface HelpPosterService {
     List<HelpPoster> getHelpPoster();
 
     ResponseResult getHelpPosterByPosterId(Integer posterId);
+
+    ResponseResult getHelpPosterByUserId(String token);
+
+    ResponseResult modifyHelpPosterInfo(HelpPoster helpPoster);
+
+    ResponseResult deleteHelpPosterInfo(Integer posterId);
 }

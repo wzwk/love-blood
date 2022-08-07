@@ -44,6 +44,44 @@ public class OssServiceImpl implements OssService {
         return new ResponseResult(RespStatusEnum.FAIL,"下载失败");
     }
 
+    @Override
+    public ResponseResult deletePosterImages(String posterId, String imgIndex) {
+        boolean deleteSuccess = deleteImg(posterId, imgIndex);
+        if (deleteSuccess) {
+            return new ResponseResult(RespStatusEnum.SUCCESS,"图片成功删除");
+        }
+        return new ResponseResult(RespStatusEnum.FAIL);
+    }
+
+    /**
+     * 删除文件
+     *
+     * @param id
+     * @param imgIndex
+     * @return
+     */
+    public boolean deleteImg(String id,String imgIndex) {
+        try {
+            //工具栏获取值
+            String endpoint = ConstantPropertiesUtils.END_POIND;
+            String accessKeyId = ConstantPropertiesUtils.ACCESS_KEY_ID;
+            String accessKeySecret = ConstantPropertiesUtils.ACCESS_KEY_SECRET;
+            String bucketName = ConstantPropertiesUtils.BUCKET_NAME;
+            String objectName = "imgs/"+ id + "/" + imgIndex;
+
+            // 创建OSSClient实例
+            OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
+            // 删除文件或目录。如果要删除目录，目录必须为空。
+            ossClient.deleteObject(bucketName, objectName);
+            // 关闭client
+            ossClient.shutdown();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     /**
      * 下载文件
      *

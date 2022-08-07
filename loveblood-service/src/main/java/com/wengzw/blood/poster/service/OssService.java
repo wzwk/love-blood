@@ -12,4 +12,6 @@ public interface OssService {
     ResponseResult uploadOssFile(MultipartFile[] files, String posterId);
 
     ResponseResult downOssFile(Integer id);
+
+    ResponseResult deletePosterImages(String posterId, String imgIndex);
 }

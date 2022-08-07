@@ -36,9 +36,26 @@ public class OssController {
         return ossService.uploadOssFile(files,posterId);
     }
 
+    /**
+     * 文件下载
+     * @param id
+     * @return
+     */
     @GetMapping("downOssFile/{id}")
     @ResponseBody
     public ResponseResult downOssFile(@PathVariable Integer id) {
         return ossService.downOssFile(id);
+    }
+
+    /**
+     * 删除文件
+     * @param posterId
+     * @param imgIndex
+     * @return
+     */
+    @DeleteMapping("deletePosterImages/{posterId}/{imgIndex}")
+    @ResponseBody
+    public ResponseResult deletePosterImages(@PathVariable String posterId,@PathVariable String imgIndex) {
+        return ossService.deletePosterImages(posterId,imgIndex);
     }
 }

@@ -1,7 +1,6 @@
 package com.wengzw.blood.poster.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.wengzw.blood.common.entity.ResponseResult;
 import com.wengzw.blood.poster.entity.BloodStore;
 import org.apache.ibatis.annotations.Select;
 
