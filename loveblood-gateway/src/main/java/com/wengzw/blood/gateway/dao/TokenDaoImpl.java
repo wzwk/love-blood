@@ -49,7 +49,7 @@ public class TokenDaoImpl implements TokenDao {
 
     @Override
     public void setToken(Integer uid, String token) {
-        redisTemplate.opsForValue().set(TokenDao.getTokenKey(uid, token), "1", Duration.ofDays(2));
+        redisTemplate.opsForValue().set(TokenDao.getTokenKey(uid, token), "1", Duration.ofDays(1));
     }
 
     @Override

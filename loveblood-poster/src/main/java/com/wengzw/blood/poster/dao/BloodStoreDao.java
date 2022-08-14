@@ -12,7 +12,7 @@ public interface BloodStoreDao extends BaseMapper<BloodStore> {
 
     @Select("SELECT b.*,t.areaName \n" +
             "from blood_store b \n" +
-            "INNER JOIN T_Area t\n" +
+            "INNER JOIN t_area t\n" +
             "where b.area_id = t.areaId \n" +
             "and t.areaName like concat('%',#{areaName}, '%')")
     BloodStore getBloodStore(String areaName);

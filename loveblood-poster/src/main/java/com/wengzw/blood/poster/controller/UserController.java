@@ -1,12 +1,21 @@
 package com.wengzw.blood.poster.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wengzw.blood.common.entity.AuthUser;
 import com.wengzw.blood.common.entity.ResponseResult;
+import com.wengzw.blood.common.enums.RespStatusEnum;
 import com.wengzw.blood.common.service.user.UserService;
 import com.wengzw.blood.common.validator.annotations.Phone;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.validator.constraints.Length;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageBuilder;
+import org.springframework.amqp.core.MessageDeliveryMode;
+import org.springframework.amqp.core.MessageProperties;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.support.converter.AbstractJavaTypeMapper;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,6 +38,10 @@ public class UserController {
     public static final String PREFIX = "/user";
 
     private final UserService userService;
+
+    private final RabbitTemplate rabbitTemplate;
+
+    private final ObjectMapper objectMapper;
 
     /**
      * 注册

@@ -75,9 +75,9 @@ public class HelpPosterServiceImpl extends ServiceImpl<HelpPosterDao, HelpPoster
     @Override
     public ResponseResult getHelpPosterByUserId(String token) {
         String userId = JwtUtils.parse(token).get("id");
-        QueryWrapper<HelpPoster> wrapper = new QueryWrapper<>();
-        wrapper.eq("user_id", Integer.valueOf(userId));
-        List<HelpPoster> helpPosters = baseMapper.selectList(wrapper);
+//        QueryWrapper<HelpPoster> wrapper = new QueryWrapper<>();
+//        wrapper.eq("user_id", Integer.valueOf(userId));
+        List<HelpPoster> helpPosters = baseMapper.getHelpPosterByUserId(Integer.valueOf(userId));
         return new ResponseResult(RespStatusEnum.SUCCESS, helpPosters);
     }
 

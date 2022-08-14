@@ -1,3 +1,10 @@
 
 J
 java:S3740"/Provide the parametrized type for this generic.(Ã¿çùøÿÿÿÿ
+j
+java:S1128"HRemove this unused import 'com.wengzw.blood.poster.dao.AppointBloodDao'.(íûÄöüÿÿÿÿ8Ó¨Å§0
+e
+java:S1128"HRemove this unused import 'com.wengzw.blood.poster.entity.AppointBlood'.(ìò½š8Ó¨Å§0
+y
+java:S1128
+"WRemove this unused import 'com.wengzw.blood.poster.service.poster.AppointBloodService'.(¶Ñ«×ıÿÿÿÿ8Ó¨Å§0

@@ -81,7 +81,7 @@ public class LogAspect {
         }
 
         log.info("record log = [{}]", sysLog);
-        sysLogMapper.insert(sysLog);
+//        sysLogMapper.insert(sysLog);
         return proceed;
     }
 

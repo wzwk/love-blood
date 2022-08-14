@@ -1,16 +1,16 @@
 package com.wengzw.blood.poster.controller;
 
+import com.wengzw.blood.common.entity.AuthUser;
 import com.wengzw.blood.common.entity.ResponseResult;
+import com.wengzw.blood.common.entity.vo.AuthUserVo;
+import com.wengzw.blood.common.enums.RespStatusEnum;
 import com.wengzw.blood.common.validator.annotations.OperationLog;
 import com.wengzw.blood.poster.service.EmailService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.Email;
 
@@ -47,6 +47,19 @@ public class EmailController {
         return ResponseResult.fail("邮件发送失败");
     }
 
-
+    /**
+     * 给用户发送邮件 是否注册成功 被poster服务调用
+     *
+     * @param user
+     * @return
+     */
+    @PostMapping("registerSuccess")
+    public ResponseResult registerSuccess(@RequestBody AuthUserVo user) {
+        boolean flag = emailService.registerSuccess(user);
+        if (flag) {
+            return new ResponseResult(RespStatusEnum.SUCCESS);
+        }
+        return new ResponseResult(RespStatusEnum.FAIL);
+    }
 
 }

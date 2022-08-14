@@ -1,0 +1,21 @@
+
+E
+java:S3740 "/Provide the parametrized type for this generic.(ÔÌÅÄ
+J
+java:S3740""/Provide the parametrized type for this generic.(„öÔıÿÿÿÿ
+E
+java:S3740*"/Provide the parametrized type for this generic.(”Ê»Ô
+E
+java:S3740,"/Provide the parametrized type for this generic.(ÿñ»Ü
+J
+java:S37403"/Provide the parametrized type for this generic.(éî…Âşÿÿÿÿ
+Q
+java:S37405"/Provide the parametrized type for this generic.(ŠÍ´–úÿÿÿÿ8²üí³§0
+h
+java:S3252)"MUse static access with "cn.hutool.core.collection.CollUtil" for "isNotEmpty".(®©ı„ùÿÿÿÿ
+B
+java:S1075"&Remove this hard-coded path-delimiter.(…µÓ ÿÿÿÿÿ
+B
+java:S1075"&Remove this hard-coded path-delimiter.(…µÓ ÿÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(ĞÒô
+e	java:S117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìØÆr

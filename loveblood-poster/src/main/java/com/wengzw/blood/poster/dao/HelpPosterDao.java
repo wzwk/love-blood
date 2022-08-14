@@ -24,4 +24,8 @@ public interface HelpPosterDao extends BaseMapper<HelpPoster> {
             "where p.user_id = u.id  AND p.id = #{posterId}")
     HelpPoster getHelpPosterByPosterId(Integer posterId);
 
+    @Select("SELECT h.*,u.userName from help_poster h\n" +
+            "INNER JOIN auth_user u on h.user_id = u.id\n" +
+            "where user_id = #{userId} ")
+    List<HelpPoster> getHelpPosterByUserId(Integer userId);
 }
