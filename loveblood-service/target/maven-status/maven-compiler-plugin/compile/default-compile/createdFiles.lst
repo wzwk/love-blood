@@ -1,8 +1,0 @@
-com\wengzw\blood\poster\controller\EmailController.class
-com\wengzw\blood\poster\LoveBloodServiceApplication.class
-com\wengzw\blood\poster\service\impl\EmailServiceImpl.class
-com\wengzw\blood\poster\service\impl\OssServiceImpl.class
-com\wengzw\blood\poster\controller\OssController.class
-com\wengzw\blood\poster\utils\ConstantPropertiesUtils.class
-com\wengzw\blood\poster\service\OssService.class
-com\wengzw\blood\poster\service\EmailService.class
