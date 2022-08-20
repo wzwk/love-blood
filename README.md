@@ -53,11 +53,17 @@
 ## 系统部分界面展示：
 
 <h4 align="center">
+<p>登录界面<p> 
 <img src="https://user-images.githubusercontent.com/63549640/185752970-33796e89-0a1c-407d-852f-f825838076e4.png" /> <br/>
+<p>首页<p>
 <img src="https://user-images.githubusercontent.com/63549640/185753022-39ab991e-4f91-4f88-b030-216aa346a5b3.png" /> <br/>
+<p>献血知识库<p>
 <img src="https://user-images.githubusercontent.com/63549640/185753076-f125b615-c860-4ed7-af68-4f25d3c7c180.png" /> <br/>
+<p>信息列表<p>
 <img src="https://user-images.githubusercontent.com/63549640/185752982-4289f421-9f3f-44c0-8899-ab3261355052.png" /> <br/>
+<p>发布寻求<p>
 <img src="https://user-images.githubusercontent.com/63549640/185753083-0fa10a38-8666-4739-8423-7bf4df7649ce.png" /> <br/>
+<p>爱心等级<p>
 <img src="https://user-images.githubusercontent.com/63549640/185753092-ea40ddce-196a-4f97-81ee-fd2e271fc93c.png" /> <br/>
 </h4>
 
