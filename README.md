@@ -3,9 +3,8 @@ love-blood是基于uniapp和微服务架构（springcloud）的一款促进献�
 ﻿<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">爱献血1.13.0</h1>
 <h4 align="center">纯公益爱心服务平台，让爱源源流动。</h4>
 <h4 align="center">
-<img src="https://img.shields.io/badge/sa--token-v1.13.0-green" />
-<img src="https://img.shields.io/badge/springboot-v2.3.7-green" />
-<img src="https://img.shields.io/badge/mybatis-v1.2.0-green" />
+<img src="https://img.shields.io/badge/springboot-v2.4.0-green" />
+<img src="https://img.shields.io/badge/springcloudalibaba-v2021.1-green" />
 </h4>
 
 ---
