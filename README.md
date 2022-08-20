@@ -1,18 +1,20 @@
-﻿<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">爱献血1.13.0</h1>
+﻿<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">爱献血</h1>
 <h4 align="center">纯公益爱心服务平台，让爱源源流动。</h4>
 <h4 align="center">
 <img src="https://img.shields.io/badge/springboot-v2.4.0-green" />
-<img src="https://img.shields.io/badge/springcloudalibaba-v2021.1-green" />
+<img src="https://img.shields.io/badge/springCloudAlibaba-v2021.1-green" />
 </h4>
----
+
 项目访问地址 ：[爱献血](http://175.178.237.123:8888/index.html#/)
+---
+
 
 ## 本程序的功能是什么？
 为广大市民提供寻求献血帮助的需求发布平台，同时也可以接入各大医疗站点，提供血液库存信息，鼓励市民主动献血，通过爱心等级、在线电子献血证等方式激励市民献血，从根本上解决”血荒“问题。同时也提供献血常识、献血要求、献血相关知识解答市民疑惑，排除献血误会，粉碎献血谣言，让市民学习到更多关于无偿献血的知识。还提供在线预约献血服务。
 
 ## 程序主要功能完成度
 
- - [x] 用户管理模块[登录、注册、找回密码、个人信息]
+ - [ ] 用户管理模块[登录、注册、找回密码、个人信息]
  - [ ] 寻求帮助模块[发布]
  - [ ] 我的关注列表模块[关注列表、取消关注]
  - [ ] 我的发布列表模块[发布列表、转发、删除、修改]
@@ -34,7 +36,7 @@
 
 ## 后端技术栈
 
-- 基于 SpringBoot + springCoudAlibaba +  Mybatis Plus+ gateway + mysql + redis + rabbitMq 构建的爱献血平台
+- 基于 SpringBoot + springCloudAlibaba +  Mybatis Plus+ gateway + mysql + redis + rabbitMq 构建的爱献血平台
 - 使用 feign 进行服务间的调用
 - 提供 lambda 、stream api 、webflux 的生产实践
 
