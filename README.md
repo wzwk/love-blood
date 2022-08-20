@@ -9,10 +9,10 @@
 ---
 
 
-## 本程序的功能是什么？
-为广大市民提供寻求献血帮助的需求发布平台，同时也可以接入各大医疗站点，提供血液库存信息，鼓励市民主动献血，通过爱心等级、在线电子献血证等方式激励市民献血，从根本上解决”血荒“问题。同时也提供献血常识、献血要求、献血相关知识解答市民疑惑，排除献血误会，粉碎献血谣言，让市民学习到更多关于无偿献血的知识。还提供在线预约献血服务。
+## 简介？
+为广大市民提供寻求献血帮助的需求发布平台，同时也可以接入各大医疗站点，提供血液库存信息，鼓励市民主动献血，通过爱心等级、在线电子献血证等方式激励市民献血，从根本上解决”血荒“问题。同时也提供献血常识、献血要求、献血相关知识解答市民疑惑，排除献血误会，粉碎献血谣言，让市民学习到更多关于无偿献血的知识。还提供在线预约献血，意见反馈等服务，鼓励更多人加入到献血这个队伍中来，并且根据各种奖励机制和互帮互助的形式来让人们感受到献血的价值与意义，提高用户献血的积极性。
 
-## 程序主要功能完成度
+## 主要功能
 
  - [ ] 用户管理模块[登录、注册、找回密码、个人信息]
  - [ ] 寻求帮助模块[发布]
@@ -47,6 +47,19 @@
 - uni-request
 - axios
 - web-view 插件式开发
+
+![image](https://user-images.githubusercontent.com/63549640/185752914-e01cdbb1-05ae-46e7-ac37-f3accee586c4.png)
+
+## 界面展示：
+![image](https://user-images.githubusercontent.com/63549640/185752970-33796e89-0a1c-407d-852f-f825838076e4.png)
+![image](https://user-images.githubusercontent.com/63549640/185753022-39ab991e-4f91-4f88-b030-216aa346a5b3.png)
+![image](https://user-images.githubusercontent.com/63549640/185753076-f125b615-c860-4ed7-af68-4f25d3c7c180.png)
+![image](https://user-images.githubusercontent.com/63549640/185752982-4289f421-9f3f-44c0-8899-ab3261355052.png)
+![image](https://user-images.githubusercontent.com/63549640/185752989-508bc113-880b-471a-a7d1-fe0d005ecdbd.png)
+![image](https://user-images.githubusercontent.com/63549640/185753068-82f0d177-66ae-4f92-a662-b55ff4d3a5b0.png)
+![image](https://user-images.githubusercontent.com/63549640/185753083-0fa10a38-8666-4739-8423-7bf4df7649ce.png)
+![image](https://user-images.githubusercontent.com/63549640/185753092-ea40ddce-196a-4f97-81ee-fd2e271fc93c.png)
+
 
 ---
 
