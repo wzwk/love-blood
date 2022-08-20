@@ -4,6 +4,9 @@
 <img src="https://img.shields.io/badge/springboot-v2.4.0-green" />
 <img src="https://img.shields.io/badge/springCloudAlibaba-v2021.1-green" />
 </h4>
+
+## 前端源码以及sql文件请在评论下方扣1 觉得不错请点个赞！！
+
 本系统采用docker进行部署
 
 项目访问地址 ：[爱献血](http://175.178.237.123:8888/index.html#/)
