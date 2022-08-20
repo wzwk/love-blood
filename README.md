@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/springboot-v2.4.0-green" />
 <img src="https://img.shields.io/badge/springCloudAlibaba-v2021.1-green" />
 </h4>
-
+本系统采用docker进行部署
 项目访问地址 ：[爱献血](http://175.178.237.123:8888/index.html#/)
 ---
 
@@ -36,7 +36,7 @@
 
 ## 后端技术栈
 
-- 基于 SpringBoot + springCloudAlibaba +  Mybatis Plus+ gateway + mysql + redis + rabbitMq 构建的爱献血平台
+- 基于 SpringBoot + springCloudAlibaba +  Mybatis Plus+ gateway + mysql + redis + rabbitMq + docker构建的爱献血平台
 - 使用 feign 进行服务间的调用
 - 提供 lambda 、stream api 、webflux 的生产实践
 
