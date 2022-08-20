@@ -5,6 +5,7 @@
 <img src="https://img.shields.io/badge/springCloudAlibaba-v2021.1-green" />
 </h4>
 本系统采用docker进行部署
+
 项目访问地址 ：[爱献血](http://175.178.237.123:8888/index.html#/)
 ---
 
