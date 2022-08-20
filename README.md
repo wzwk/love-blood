@@ -24,5 +24,27 @@ love-blood是基于uniapp和微服务架构（springcloud）的一款促进献�
  - [ ] 血液库存模块[血液库存信息]
  - [ ] 献血知识库模块[web-view引入到程序]
 
+## 主要服务
+本项目由本人多次重构，经历了springboot 到 springcloud的构建，通过对系统的研究，最终将系统分为以下四个服务，方便扩展
+
+- 1、网关服务
+- 2、文章服务
+- 3、第三方服务
+- 3、公共服务模块
+
+## 后端技术栈
+
+- 基于 SpringBoot + springCoudAlibaba +  Mybatis Plus+ gateway + mysql + redis + rabbitMq 构建的爱献血平台
+- 使用 feign 进行服务间的调用
+- 提供 lambda 、stream api 、webflux 的生产实践
+
+## 前端技术栈
+
+- uni-app  是一个使用 Vue.js 开发所有前端应用的框架,者编写一套代码，可发布到 iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/飞书/QQ/快手/钉钉/淘宝）和快应用等多个平台。
+- Uview  
+- uni-request
+- axios
+- web-view 插件式开发
+
 ---
 
