@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: loveblood-poster
+  profiles:
+    active: test
+#    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        file-extension: yaml
+        server-addr: 127.0.0.1:8848
+        group: TEST_GROUP
+        namespace: 438286b1-295d-461f-9e81-0c094d60e169
+#        dev 环境下
+#        namespace: 438286b1-295d-461f-9e81-0c094d60e169

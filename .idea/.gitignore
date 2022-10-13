@@ -11,4 +11,5 @@
 #忽略所有target目录
 target/
 #忽略所有.iml文件
+.idea
 *.iml
