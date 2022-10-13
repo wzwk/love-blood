@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/springCloudAlibaba-v2021.1-green" />
 </h4>
 
-## 前端源码以及sql文件请在评论下方扣1 觉得不错请点个赞！！
+## 前端源码以及sql文件请在评论下方扣1！！
 
 本系统采用docker进行部署
 
